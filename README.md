@@ -14,3 +14,8 @@ or
 g++ -o aes_main aes_main.cpp aes_function.cpp -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib -lssl -lcrypto
 ```
 
+## huffman/huffman.cpp
+
+```
+g++ -std=c++17 -o huffman huffman.cpp
+```
