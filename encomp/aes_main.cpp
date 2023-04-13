@@ -22,9 +22,15 @@ int main()
     // std::string ciphertext = aes_function_encrypt(key, plaintext);
     std::string ciphertext = aes_function_encrypt(key, data);
     // std::cout << "Ciphertext: " << ciphertext << std::endl;
-    ofs.open("./ciphertext.txt");
-    ofs << ciphertext << std::endl;
-    ofs.close();
+    // ofs.open("./ciphertext.txt");
+    // ofs << ciphertext << std::endl;
+    // ofs.close();
+
+    std::ifstream ifs2("./undumped.txt");
+    while(!ifs2.eof()){
+        std::getline(ifs2, buf);
+        ciphertext += buf + "\n";
+    }
 
     // 復号化
     std::string decrypted_text = aes_function_decrypt(key, ciphertext);
