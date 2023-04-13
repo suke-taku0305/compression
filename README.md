@@ -19,3 +19,22 @@ g++ -o aes_main aes_main.cpp aes_function.cpp -I/usr/local/opt/openssl/include -
 ```
 g++ -std=c++17 -o huffman huffman.cpp
 ```
+
+## encomp
+how to make dumped and undumped file
+
+### make dumped file
+```
+cat ciphertext.txt | hexdump -Cv > dumped.txt
+```
+### you can zip compression for dumped.txt
+```
+zip dumped.zip dumped.txt
+```
+
+### undumped
+```
+cat dumped.txt | xxd -r -p > undumped.txt
+```
+
+then you can decryption using undumped.txt
