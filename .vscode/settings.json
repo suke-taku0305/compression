@@ -81,7 +81,8 @@
         "utility": "cpp",
         "stop_token": "cpp",
         "thread": "cpp",
-        "cinttypes": "cpp"
+        "cinttypes": "cpp",
+        "__verbose_abort": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
