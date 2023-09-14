@@ -20,6 +20,13 @@ g++ -o aes_main aes_main.cpp aes_function.cpp -I/usr/local/opt/openssl/include -
 g++ -std=c++17 -o huffman huffman.cpp
 ```
 
+## rsa/rsa_final.cpp
+
+```
+g++ rsa_final.cpp rsa.cpp -o rsa_final
+./rsa_final 10000
+```
+
 ## encomp
 how to make dumped and undumped file
 
